@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLC Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 350px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        .project-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .project-card h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(25, 118, 210, 0.4);
+        }
+
+        .divider {
+            height: 2px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 40px 0;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .project-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 LLC Projects</h1>
+            <p>Select a project to get started</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Smart To-Do List Pro -->
+            <a href="Smart_to_do_list_pro.html" class="project-card">
+                <div>
+                    <div class="project-icon">✅</div>
+                    <h2>Smart To-Do List</h2>
+                    <p>Stay organized and productive with our advanced task management system. Create, manage, and track your daily tasks efficiently.</p>
+                </div>
+                <button class="btn btn-primary">Open Project</button>
+            </a>
+
+            <!-- Ultimate Quiz Game -->
+            <a href="Ultimate_Quiz_game.html" class="project-card">
+                <div>
+                    <div class="project-icon">🧠</div>
+                    <h2>Ultimate Quiz Game</h2>
+                    <p>Test your knowledge and have fun with our interactive quiz game. Challenge yourself and improve your skills.</p>
+                </div>
+                <button class="btn btn-secondary">Open Project</button>
+            </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="footer">
+            <p>© 2026 LLC Projects. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
